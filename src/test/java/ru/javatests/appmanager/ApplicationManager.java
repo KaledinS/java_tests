@@ -34,17 +34,14 @@ public class ApplicationManager {
     }
 
     public void init() throws IOException {
-       String target = System.getProperty("target","local");
-       properties = new Properties();
-       properties.load(new FileReader(new File(String.format("src/test/properties/local.properties",target))));
+        String target = System.getProperty("target", "local");
+        properties.load(new FileReader(new File(String.format("src/test/properties/local.properties", target))));
 
-        if ( browser.equals(BrowserType.CHROME)){
+        if (browser.equals(BrowserType.CHROME)) {
             driver = new ChromeDriver();
-        }
-        else if ( browser.equals(BrowserType.FIREFOX)){
+        } else if (browser.equals(BrowserType.FIREFOX)) {
             driver = new FirefoxDriver();
-        }
-        else if ( browser.equals(BrowserType.IE)){
+        } else if (browser.equals(BrowserType.IE)) {
             driver = new InternetExplorerDriver();
         }
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
@@ -53,25 +50,22 @@ public class ApplicationManager {
         sessionHelper = new SessionHelper(driver);
         projectHelper = new ProjectHelper(driver);
         sessionHelper.login(properties.getProperty("username"), properties.getProperty("password"));
-//       sessionHelper.badLogin(properties.getProperty("badUsername"), properties.getProperty("badPassword"));
-        // driver.get("http://addressbook.local:8080/");
-
     }
 
-    public void login(String username, String password) {
 
-    }
-
-public NavigationHelper goTo(){
+    public NavigationHelper goTo() {
         return navigationHelper;
-}
-    public SessionHelper sessionHelper(){
+    }
+
+    public SessionHelper session() {
         return sessionHelper;
     }
+
     public String getProperty(String key) {
         return properties.getProperty(key);
     }
-    public ProjectHelper projectHelper(){
+
+    public ProjectHelper project() {
         return projectHelper;
     }
 
@@ -108,7 +102,6 @@ public NavigationHelper goTo(){
             acceptNextAlert = true;
         }
     }
-
 
 
 }

@@ -18,17 +18,8 @@ public class NavigationHelper extends HelperBase {
         click(By.linkText("список задач"));
     }
 
-    public void goToContactPage() {
-        click(By.linkText("add new"));
-    }
 
-    public void goToHomePage() {
-        if (isElementPresent(By.id("maintable"))) {
-            return;
-        }
-        click(By.linkText("home"));
-    }
-    public void projectManage(){
+    public void projectManage() {
         click(By.linkText("управление"));
         click(By.linkText("Управление проектами"));
     }
