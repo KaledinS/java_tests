@@ -4,18 +4,22 @@ package ru.javatests.tests;
 import org.testng.annotations.Test;
 import ru.javatests.model.ProjectData;
 
-import java.util.List;
+import java.util.Set;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class ProjectCreationTest extends TestBase {
     @Test
     public void testProjectCreation() {
-        ProjectData project = new ProjectData("NewProject25", "description");
+
         app.goTo().projectManage();
-        List<ProjectData> before = app.project().list();
+        Set<ProjectData> before = app.project().all();
+        ProjectData project = new ProjectData().setName("name12255557115");
         app.project().create(project);
-        List<ProjectData> after = app.project().list();
+        Set<ProjectData> after = app.project().all();
         assertEquals(before.size() + 1, after.size());
+        project.setId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());
+        before.add(project);
+        assertEquals(before,after);
     }
 }

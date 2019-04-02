@@ -2,7 +2,7 @@ package ru.javatests.tests;
 
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class LoginTest extends TestBase {
 
@@ -11,6 +11,7 @@ public class LoginTest extends TestBase {
         String loggedUser = app.session().loggedUser();
         String actualUser = app.getProperty("username");
         assertEquals(loggedUser, actualUser);
+
     }
 
 }

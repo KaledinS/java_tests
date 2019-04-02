@@ -4,14 +4,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.javatests.model.ProjectData;
 
-import java.util.List;
+import java.util.Set;
 
 import static org.testng.Assert.assertEquals;
 
 public class ProjectDeletionTest extends TestBase {
     @BeforeMethod
     public void insurePrecondition() {
-        ProjectData project = new ProjectData("project", "description");
+        ProjectData project = new ProjectData().setName("name1");
         app.goTo().projectManage();
         if (!app.project().isThereProject()) {
             app.project().create(project);
@@ -20,10 +20,14 @@ public class ProjectDeletionTest extends TestBase {
 
     @Test
     public void testProjectDeletion() {
-        List<ProjectData> before = app.project().list();
-        app.project().delete();
-        List<ProjectData> after = app.project().list();
+
+        Set<ProjectData> before = app.project().all();
+        ProjectData projectDel = before.iterator().next();;
+        app.project().delete(projectDel);
+        Set<ProjectData> after = app.project().all();
         assertEquals(before.size() - 1,after.size());
+        before.remove(projectDel);
+        assertEquals(before,after);
 
     }
 }

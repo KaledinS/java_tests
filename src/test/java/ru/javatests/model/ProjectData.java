@@ -5,25 +5,24 @@ import java.util.Objects;
 
 public class ProjectData {
 
-    public int id = Integer.MAX_VALUE;
-    public String name;
-    public String description;
+    private int id;
+    private String name;
+    private String description;
 
-    public ProjectData(int id, String name, String description) {
+    public ProjectData setId(int id) {
         this.id = id;
+        return this;
+    }
+
+    public ProjectData setName(String name) {
         this.name = name;
-        this.description = description;
+        return this;
     }
 
 
-    public ProjectData(String name, String description) {
-        this.name = name;
+    public ProjectData setDescription(String description) {
         this.description = description;
-    }
-
-    public ProjectData(int id, String name) {
-        this.id = id;
-        this.name = name;
+        return this;
     }
 
 
@@ -35,6 +34,18 @@ public class ProjectData {
         return description;
     }
 
+    public int getId() {
+        return id;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ProjectData{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -49,5 +60,4 @@ public class ProjectData {
     public int hashCode() {
         return Objects.hash(id, name);
     }
-
 }
