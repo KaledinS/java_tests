@@ -1,6 +1,5 @@
 package ru.javatests.tests;
 
-
 import org.testng.annotations.Test;
 import ru.javatests.model.ProjectData;
 
