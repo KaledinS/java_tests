@@ -13,7 +13,7 @@ public class ProjectCreationTest extends TestBase {
 
         app.goTo().projectManage();
         Set<ProjectData> before = app.project().all();
-        ProjectData project = new ProjectData().setName("NewName");
+        ProjectData project = new ProjectData().setName("New_Name");
         app.project().create(project);
         Set<ProjectData> after = app.project().all();
         assertEquals(before.size() + 1, after.size());

@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectCreationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="323">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,8 +156,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectModificationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectBadCreationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/javatests/appmanager/ProjectHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectCreationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectCreationTest.java" />
       </list>
     </option>
   </component>
@@ -452,7 +452,7 @@
   <component name="ToolWindowManager">
     <frame x="280" y="23" width="1400" height="1000" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.280597" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.280597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -466,7 +466,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32949308" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32949308" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32949308" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32949308" />
@@ -484,6 +484,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/../selenium-tests" />
+      <path value="$PROJECT_DIR$/../selenium_tests" />
     </ignored-roots>
     <MESSAGE value="upgrade tests" />
     <option name="LAST_COMMIT_MESSAGE" value="upgrade tests" />
@@ -601,16 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectCreationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectBadCreationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -682,8 +673,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="323">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
