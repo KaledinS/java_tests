@@ -27,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectCreationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -75,14 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -156,8 +153,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectModificationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectBadCreationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/javatests/appmanager/ProjectHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectCreationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/javatests/tests/TestBase.java" />
       </list>
     </option>
   </component>
@@ -418,9 +415,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProjectDeletionTest - 2019.04.02 at 19h 17m 28s.xml">
-      <configuration name="ProjectDeletionTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ProjectBadCreationTest - 2019.04.02 at 20h 11m 44s.xml">
       <configuration name="ProjectBadCreationTest" configurationId="TestNG" />
     </history-entry>
@@ -447,6 +441,9 @@
     </history-entry>
     <history-entry file="ProjectCreationTest - 2019.04.03 at 05h 05m 53s.xml">
       <configuration name="ProjectCreationTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ProjectDeletionTest - 2019.04.03 at 05h 08m 43s.xml">
+      <configuration name="ProjectDeletionTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -671,16 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/ProjectCreationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -688,6 +675,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/javatests/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>

@@ -8,9 +8,7 @@ import ru.javatests.appmanager.ApplicationManager;
 
 public class TestBase {
 
-
     protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
-
 
     @BeforeSuite(alwaysRun = true)
     public void setUp() throws Exception {
@@ -21,5 +19,4 @@ public class TestBase {
     public void tearDown() throws Exception {
         app.stop();
     }
-
 }
